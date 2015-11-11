@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!-- 底部 -->
+
+    <include
+        android:id="@+id/musicListBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/mini_player_panel" />
+    <!-- 顶部 -->
+
+    <include
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbar_height"
+        layout="@layout/musiclist_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/topbar_bg"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_button_xml" />
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/searchButton"
+                android:background="@android:color/white" >
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listSongs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/musicListBottomBar"
+        android:layout_below="@id/search"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/white"
+        android:dividerHeight="@dimen/divider_height"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/list_item_f_bg" />
+
+</RelativeLayout>

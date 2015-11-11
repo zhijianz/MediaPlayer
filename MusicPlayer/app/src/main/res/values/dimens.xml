@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="player_bottombar_small_size">34.0dip</dimen>
+	<dimen name="player_bottombar_height">44.0dip</dimen>
+	<dimen name="player_progressbar_height">9.0dip</dimen>
+	<dimen name="topbar_height">48.0dip</dimen>
+	<dimen name="dialog_title_text_size">18.0dip</dimen>
+	<dimen name="volume_bg_height">72.0dip</dimen>
+	<dimen name="list_title_text_size">18.0dip</dimen>
+	<dimen name="divider_height">0.5dip</dimen>
+	<dimen name="pop_list_child_height">46.0dip</dimen>
+	<dimen name="comm_list_item_height">46.0dip</dimen>
+	<dimen name="comm_list_letteritem_height">20.0dip</dimen>
+	<dimen name="playing_sign_width">3.0dip</dimen>
+	<dimen name="download_ex_pro_color_height">44.0dip</dimen>
+	<dimen name="download_pro_color_height">2.0dip</dimen>
+	<dimen name="bottom_mini_player_height">76.0dip</dimen>
+	<dimen name="page_item_bottom_height">32.0dip</dimen>
+	<dimen name="page_item_bottom_font_size">24.0dip</dimen>
+	<dimen name="main_navigation_bar_width">47.0dip</dimen>
+	<dimen name="main_navigation_bar_height">700.0dip</dimen>
+	<dimen name="launcher_short_axis_start_padding">10.0dip</dimen>
+	<dimen name="main_navigation_bar_item_width">43.0dip</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/playerView" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/bg">
+	<!-- 顶部 -->
+	<RelativeLayout android:gravity="center_horizontal"
+		android:id="@+id/topBar" android:background="@drawable/topbar_bg"
+		android:layout_width="fill_parent" android:layout_height="@dimen/topbar_height">
+		<include layout="@layout/player_top_bar" />
+	</RelativeLayout>
+	<!-- 底部 -->
+	<RelativeLayout android:id="@+id/bottomArea"
+		android:background="@drawable/topbar_bg" android:layout_width="wrap_content"
+		android:layout_height="94dp" android:layout_alignParentBottom="true">
+
+		<include android:id="@+id/bottom" android:layout_width="fill_parent"
+			android:layout_height="@dimen/player_bottombar_height"
+			android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip"
+			layout="@layout/player_bottom_bar" />
+		<include android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/bottom"
+			layout="@layout/player_progress_bar" />
+	</RelativeLayout>
+
+	<!-- 视图页面 -->
+	<LinearLayout android:orientation="horizontal" android:id="@+id/viewNumber"
+		android:layout_width="wrap_content" android:layout_height="24.0dip"
+		android:layout_marginBottom="4.0dip" android:layout_above="@id/bottomArea"
+		android:layout_centerHorizontal="true">
+	</LinearLayout>
+	<com.feilong.view.BasicView
+		android:layout_width="fill_parent" android:layout_height="280dp"
+		android:padding="12dp" android:id="@+id/album"
+		android:layout_alignParentLeft="true" android:layout_above="@+id/viewNumber"></com.feilong.view.BasicView>
+	<TextView android:id="@+id/currSongTextView" android:text="TextView"
+		android:layout_width="wrap_content" android:layout_height="25dp"
+		android:layout_above="@+id/album" android:layout_toRightOf="@+id/viewNumber"
+		android:layout_marginLeft="44dp"
+		android:visibility="gone"></TextView>
+	<TextView android:id="@+id/currSingerTextView" android:text="TextView"
+		android:layout_width="wrap_content" android:layout_height="25dp"
+		android:layout_above="@+id/album" android:layout_toLeftOf="@+id/viewNumber"
+		android:visibility="gone"
+		android:layout_marginRight="44dp"></TextView>
+</RelativeLayout>

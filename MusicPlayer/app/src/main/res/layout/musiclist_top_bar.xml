@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:state_window_focused="false" android:orientation="horizontal"
+	android:background="@drawable/topbar_bg" android:paddingTop="3.0dip"
+	android:layout_width="match_parent" android:layout_height="@dimen/topbar_height">
+	<ImageView android:id="@+id/topButton"
+		android:background="@drawable/player_top_bar_back_button_xml"
+		android:focusable="false" android:visibility="visible"
+		android:clickable="false" android:layout_width="43.0dip"
+		android:layout_height="43.0dip" android:layout_marginLeft="6.0dip"
+		android:layout_marginRight="4.0dip" android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" />
+	<RelativeLayout android:gravity="center_horizontal"
+		android:id="@+id/centerArea" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_centerVertical="true"
+		android:layout_alignWithParentIfMissing="true">
+
+		<TextView
+		    android:id="@+id/titleTextView"
+		    style="@style/playlist_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignWithParentIfMissing="true"
+		    android:layout_centerVertical="true"
+		    android:ellipsize="end"
+		    android:gravity="center_horizontal"
+		    android:singleLine="true"
+		    android:text="@string/localsong"
+		    android:textSize="@dimen/list_title_text_size" />
+
+		<ImageView android:id="@+id/titleButton"
+			android:background="@drawable/player_top_bar_expand_button_xml"
+			android:focusable="true" android:visibility="gone" android:clickable="true"
+			android:layout_width="12.0dip" android:layout_height="12.0dip"
+			android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/titleTextView"
+			android:layout_centerVertical="true" />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="QQMusicListProgressBarStyle">
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:indeterminateDrawable">@anim/default_progressbar</item>
+	</style>
+	<style name="progress_time_color">
+		<item name="android:textColor">#ff3c3c3c</item>
+	</style>
+	<style name="playlist_title">
+		<item name="android:textColor">#ffffffff</item>
+	</style>
+	<style name="input_highlight_color">
+		<item name="android:textColor">#ff4e4e4e</item>
+		<item name="android:textColorHighlight">#ffbbb9b0</item>
+	</style>
+	<style name="playlist_item_name">
+		<item name="android:textColor">#ff000000</item>
+	</style>
+	<style name="playlist_item_singer">
+		<item name="android:textColor">#ff707070</item>
+	</style>
+</resources>

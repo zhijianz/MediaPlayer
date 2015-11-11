@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drag_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!-- 顶部 -->
+
+    <include
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbar_height"
+        layout="@layout/musiclist_top_bar" />
+
+    <include
+        android:id="@id/musicListBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/mini_player_panel" />
+
+    <LinearLayout
+        android:id="@+id/workspace"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/musicListBottomBar"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="22dip" >
+
+        <include
+            android:id="@+id/localmusic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            layout="@layout/page_item1" />
+
+        <include
+            android:id="@+id/netmusic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="32dp"
+            layout="@layout/page_item2" />
+    </LinearLayout>
+
+</RelativeLayout>

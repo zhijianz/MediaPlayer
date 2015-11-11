@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, FinalsPlayer!</string>
+	<string name="app_name">音乐播放器</string>
+	<string name="search">搜索</string>
+	<string name="localsong">本地歌曲</string>
+	<string name="value_mini_panel">0</string>
+	<string name="user_info_default_signature">点击头像即可登录</string>
+	<string name="finish_btn_text">完成</string>
+	<string name="local_music">本地歌曲</string>
+	<string name="net_music">网上搜索</string>
+</resources>

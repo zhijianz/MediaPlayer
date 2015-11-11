@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.feilong" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+	<application 
+	    android:icon="@drawable/icon" 
+	    android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar">
+		<activity android:name=".MusicPlayerActivity" android:label="@string/app_name"
+		android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".CommonListActivity">
+		</activity>
+		<activity android:name=".MyMusicActivity">
+		</activity>
+		<activity android:name=".SearchActivity" android:windowSoftInputMode="adjustPan" >
+		</activity>
+		<activity android:name=".MusicActivity"></activity>
+		<activity android:name=".MainMusicPlayerActivity">
+		</activity>
+		<service android:name="com.feilong.service.MusicService"
+		android:enabled="true">
+			<intent-filter>
+				<action android:name="com.feilong.service.MusicService" />
+			</intent-filter>
+		</service>
+		<receiver android:name="com.feilong.broadcast.CommonBroadcastReceiver">
+		   <intent-filter>
+		     <action android:name="android.intent.action.NEW_OUTGOING_CALL"/> 
+		     <action android:name="android.intent.action.PHONE_STATE"/>
+		   </intent-filter>
+		</receiver>
+	</application>
+</manifest>

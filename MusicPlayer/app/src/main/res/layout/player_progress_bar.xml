@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center_vertical" android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<TextView android:textSize="12dp" android:gravity="left|center"
+		style="@style/progress_time_color" android:id="@+id/currTimeTextView"
+		android:layout_width="40dip" android:layout_height="27dip"
+		android:layout_marginLeft="14dip" android:text="00:00"
+		android:layout_alignParentLeft="true" />
+	<TextView android:textSize="12dp" android:gravity="left|center"
+		style="@style/progress_time_color" android:id="@+id/totalTimeTextView"
+		android:layout_width="40dip" android:layout_height="27dip"
+		android:layout_marginRight="14dip" android:text="00:00"
+		android:layout_alignParentRight="true" />
+	<SeekBar android:id="@+id/playSeekBar" 
+	    android:paddingLeft="4.0dip"
+		android:paddingTop="0.0dip" 
+		android:paddingRight="4.0dip"
+		
+		android:focusable="false" android:clickable="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop="0.0dip" android:scaleType="centerInside"
+		android:maxHeight="@dimen/player_progressbar_height"
+		
+		android:progressDrawable="@drawable/progressbar_xml"
+		android:thumb="@drawable/progress_thum"
+		
+		android:minHeight="@dimen/player_progressbar_height" 
+		android:thumbOffset="6.0dip" android:layout_toLeftOf="@id/totalTimeTextView"
+		android:layout_toRightOf="@id/currTimeTextView"
+		android:layout_centerHorizontal="true" />
+</RelativeLayout>

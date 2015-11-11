@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="65dip"
+    android:background="@drawable/topbar_bg" >
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/local_music"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/page_item_bottom_font_size" />
+
+</RelativeLayout>

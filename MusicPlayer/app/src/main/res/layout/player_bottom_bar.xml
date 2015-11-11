@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<ImageButton android:id="@+id/playModeButton"
+		android:background="@drawable/repeat_all_button_xml"
+		android:focusable="false" android:focusableInTouchMode="false"
+		android:clickable="true" android:layout_width="@dimen/player_bottombar_small_size"
+		android:layout_height="@dimen/player_bottombar_small_size"
+		android:layout_marginLeft="10.0dip" android:layout_marginRight="0.0dip"
+		android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+	<ImageButton android:id="@+id/volumnButton"
+		android:background="@drawable/player_bottom_volumn_control_button_xml"
+		android:focusable="false" android:focusableInTouchMode="false"
+		android:clickable="true" android:layout_width="@dimen/player_bottombar_small_size"
+		android:layout_height="@dimen/player_bottombar_small_size"
+		android:layout_marginRight="10.0dip" android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+		<ImageButton android:id="@+id/prevbtn" android:background="@drawable/mini_prebtn_xml"
+			android:focusable="true" android:clickable="true"
+			android:layout_width="@dimen/player_bottombar_height"
+			android:layout_height="@dimen/player_bottombar_height"
+			android:layout_marginRight="0.0dip" android:layout_weight="1.0" />
+		<ImageButton android:id="@+id/pausebtn"
+			android:background="@drawable/mini_pausebtn_xml" android:focusable="true"
+			android:clickable="true" android:layout_width="@dimen/player_bottombar_height"
+			android:layout_height="@dimen/player_bottombar_height"
+			android:layout_marginLeft="15.0dip" android:layout_weight="1.0" />
+		<ImageButton android:id="@+id/nextbtn" android:background="@drawable/mini_nextbtn_xml"
+			android:focusable="true" android:clickable="true"
+			android:layout_width="@dimen/player_bottombar_height"
+			android:layout_height="@dimen/player_bottombar_height"
+			android:layout_marginLeft="15.0dip" android:layout_weight="1.0" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/bg">
+	<!-- 底部 -->
+	<include android:id="@+id/musicListBottomBar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" layout="@layout/mini_player_panel" />
+	<!-- 顶部 -->
+	<include android:id="@+id/topBar" android:layout_width="fill_parent"
+		android:layout_height="@dimen/topbar_height" layout="@layout/musiclist_top_bar" />
+	<ListView android:id="@+id/musicList" android:focusable="false"
+	    android:cacheColorHint="@android:color/transparent"
+		android:background="@color/white" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:listSelector="@drawable/list_item_f_bg"
+		android:drawSelectorOnTop="false" android:divider="@android:color/black"
+		android:dividerHeight="@dimen/divider_height" android:layout_below="@id/topBar"
+		android:layout_above="@id/musicListBottomBar"
+		android:fastScrollEnabled="false" android:headerDividersEnabled="false" />
+	
+</RelativeLayout>

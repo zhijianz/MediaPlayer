@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textColor="@color/black" android:gravity="center_vertical"
+		android:id="@+id/letter_line" android:background="@color/letterindex_listitem_header_bg"
+		android:paddingLeft="16.0dip" android:visibility="gone"
+		android:layout_width="fill_parent" android:layout_height="@dimen/comm_list_letteritem_height"
+		android:drawableBottom="@drawable/letter_item_bg_bottom"
+		android:layout_alignParentTop="true" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="@dimen/comm_list_item_height"
+		android:layout_below="@id/letter_line">
+		<include layout="@layout/play_list_item_common" />
+	</RelativeLayout>
+</RelativeLayout>

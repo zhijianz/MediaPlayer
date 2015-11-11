@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffffff</color>
+	<color name="black">#ff000000</color>
+	<color name="letterindex_listitem_header_bg">#ffffffff</color>
+	<color name="mini_player_text_color">#e02b2b2b</color>
+	<color name="mini_player_text_shadow_color">#ffffffff</color>
+	<color name="progressbar_color">#AA000000</color>
+</resources>
